@@ -60,4 +60,4 @@ for (let i=0; i < dropdownTriggers.length; i++) {
     }
 }
 
-console.log('Site by Chris and Rob  @ New World Digital Media');
+console.log('Site by Chris and Rob @ New World Digital Media');
