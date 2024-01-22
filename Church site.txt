@@ -1,0 +1,45 @@
+Church site
+Pages:
+	Home
+		- Nav hero etc
+			- Sermon info in hero
+		- Upcoming events/What's on
+		- Sermon videos
+		- Welcome, about
+		- Bookings etc
+		- Our values?
+		- Shop
+		- Map above footer
+	About
+		- Meet the team#
+	Services & Events
+	Bookings
+		- Weddings
+		- Baptisms
+		- Church hall
+	Sermons
+	Shop
+	Donations
+	Safeguarding
+	Contact
+
+Join us this Sunday, service times
+- Webdevsimplified animations, or a JS animation library?
+
+
+About us 
+team page
+Services page, events
+Church hall bookings - contact Mike
+Shop page - form submission?
+Sermon videos - live streams, homepage - toggle
+Logo
+Donations page - PayPal
+Keep safeguarding, iframe
+
+
+https://standrewsorford.church/
+https://preview.themeforest.net/item/salvation-church-religion-wp-theme/full_screen_preview/20960385
+https://www.achurchnearyou.com/church/15284/service-and-events/events-all/
+https://cathedral.org.uk/learn/
+https://img.freepik.com/premium-vector/christian-church-logo-creative-cross-design-vector_487414-2367.jpg?w=740

@@ -1,0 +1,320 @@
+/*
+▄█ ▀█ █▀█ █▀█ █▀█ ▀▄▀
+░█ █▄ █▄█ █▄█ █▀▀ █░█*/
+
+@media (max-width: 1200px) {
+    header nav ul {
+      gap: 0.5em;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+      }
+}
+
+/*
+▄█ █▀█ █▀ █▀█ █▀█ ▀▄▀
+░█ █▄█ ▄█ █▄█ █▀▀ █░█*/
+
+@media (max-width: 1050px) {
+    .hamburger {
+        display: block;
+    }
+
+   header nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: flex-start;
+        height: 100vh;
+        width: 100%;
+        padding-top: var(--header-height);
+        background-color: rgba(255,255,255,0.8);
+        backdrop-filter: blur(10px);
+        text-align: center;
+        transform: translateX(200vw);
+        overflow-x: hidden;
+        overflow-y: scroll;
+        transition: 1s ease;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        gap: 1.5em;
+    }
+
+    header nav ul li {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav a {
+        font-size: 1.6rem;
+        color: var(--dark-grey);
+    }
+
+    header nav a:hover {
+        text-decoration-color: var(--accent-color-1);
+    }
+
+    header nav ul ul {
+        width: auto;
+        height: auto;
+        max-height: 0;
+        margin: 0 0 0 -1em;
+        padding: 0;
+        position: static;
+        overflow: hidden;
+        opacity: 1;
+        transition: 0.5s ease;
+    }
+
+    header nav ul ul li a {
+        font-size: 1.3rem;
+    }
+
+    li:has(ul) > a {
+        margin: 0 0 0 0.5em;
+        pointer-events: none;
+    }
+
+    li:has(ul) > a::after {
+        display: inline-block;
+        content: '>';
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        font-size: 0.8em;
+        transform: rotate(90deg) translate(0em,-0.3em) scaleX(0.7);
+        color: var(--medium-grey);
+    }
+
+    .slide-nav {
+        transform: translateX(0vw);
+    }
+
+    .dropdown-accordian {
+        max-height: 300px;
+        padding: 0.4em 0;
+        overflow: visible;
+        pointer-events: auto;
+        background-color: rgba(110, 110, 110, 0.1);
+    }
+
+    .dark-nav-text {
+        color: var(--dark-grey);
+    }
+
+    .dark-nav-text:hover {
+        text-decoration-color: var(--accent-color-1);
+    }
+
+    .dropdown-shadow {
+        box-shadow: inset 0px 13px 18px -10px rgba(0,0,0,0.2);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*
+▄█ █▀█ █▀ █▀█ █▀█ ▀▄▀
+░█ █▄█ ▄█ █▄█ █▀▀ █░█*/
+
+@media (max-width: 1050px) {
+    .row {
+        flex-direction: column;
+        gap: 5dvw;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .map-section {
+        min-height: 600px;
+        position: relative;
+        padding: 0;
+        gap: 0;
+        background-color: #e8eaed;
+    }
+
+    .map-section .row {
+        justify-content: inherit;
+    }
+
+    .map-section .column:first-child {
+        padding: 60px var(--horizontal-page-padding) 30px var(--horizontal-page-padding);
+        text-align: left;
+        background-color: #e8eaed;
+        background-image:  none;
+    }
+
+    .map-section .column p {
+        margin-top: 0;
+        width: 100%;
+        float: clear;
+    }
+
+    .map-section iframe {
+        display: block;
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 57%;
+        filter: grayscale(0);
+    }
+
+    .show-on-mobile {
+        display: block;
+    }
+
+    .zig-zag-section {
+        padding-top: 0;
+    }
+    
+    .zig-zag-section .row {
+        gap: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .zig-zag-section .column {
+        gap: 1em;
+    }
+    
+    .zig-zag-section .row:nth-child(even),
+    .zig-zag-section .row:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+    
+    .zig-zag-section .row:nth-child(even) * :not(img) {
+        padding-left: 0;
+    }
+    
+    .zig-zag-section .row:nth-child(odd) * :not(img) {
+        padding-right: 0;
+    }
+
+    .zig-zag-section .column:has(img)::after {
+        height: 5px;
+    }
+
+    form .row {
+        gap: 0;
+    }
+
+    .about-page section:nth-child(even) .row {
+        flex-direction: column-reverse;
+    }
+
+    .team-members-container {
+        grid-template-columns: 1fr;
+    }
+
+    .school-section .row {
+        flex-direction: column-reverse;
+    }
+
+    .events-intro .row:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+    
+    .events-page .event {
+        flex-direction: column-reverse;
+    }
+
+    .events-container {
+        max-height: 2000px;
+    }
+    .events-page .event-text {
+        width: 100%;
+    }
+
+    .events-page .event-image {
+        width: 100%;
+        aspect-ratio: 1.5;
+    }
+
+    .events-page .event-image::after {
+        height: 5px;
+    }
+}
+
+/*
+█▄▄ █▀ █▀█ █▀█ ▀▄▀
+█▄█ ▄█ █▄█ █▀▀ █░█*/
+
+@media (max-width: 650px) {
+    :root {
+        --horizontal-page-padding: 5%;
+        --header-height: 55px;
+    }
+
+    footer ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .events-page .event-text {
+        padding: 1em;
+    }
+
+    .events-page .event-time,
+    .events-page .event-date {
+        display: block;
+    }
+
+}
+    
+/*
+█░█ █▀ █▀█ █▀█ ▀▄▀
+▀▀█ ▄█ █▄█ █▀▀ █░█*/
+
+@media (max-width: 450px) {
+    section {
+        padding: 60px var(--horizontal-page-padding);
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .secondary-button {
+        margin-top: 0.5em;
+    }
+
+    p, input, select, label {
+        font-size: 1.1rem;
+    }
+
+    .button-white {
+        margin-bottom: 0.5em;
+    }
+
+    .intro-section {
+        flex-direction: column;
+        padding: 60px var(--horizontal-page-padding);
+    }
+
+    .event-card {
+        width: 75%;
+        aspect-ratio: 0.8;
+        margin: 0.5em;
+    }
+
+    .full-width-on-mobile {
+        scale: 1.1;
+        margin: 1em 0;
+    }
+
+    .accessible-features-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}

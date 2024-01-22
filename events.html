@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events • St. Andrews Orford</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalise.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/flickity.css" media="screen">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./media/favicon/favicon.png">
+    <!-- Preload -->
+    <link rel="preload" fetchpriority="high" as="image" href="./media/hero-images/default-page-hero.jpg" type="image/jpeg">
+</head>
+
+<body class="events-page">
+<!-- Header -->    
+    <header>
+        <a href="index.html"><img src="./media/logo/logo.png" class="logo   white-logo" alt="Logo"></a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="events.html">Events</a>
+                </li>
+
+                <li><a href="sermons.html">Sermons</a></li>
+                <li>
+                    <a href="bookings.html">Bookings</a>
+                    <ul>
+                        <li><a href="bookings.html">Overview</a></li>
+                        <li><a href="bookings.html#booking-form-section">Book the church</a></li>
+                    </ul>
+                </li>
+                <li><a href="shop.html">Shop</a></li>
+                <li>
+                    <a href="about.html">About us</a>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="about.html#meet-the-team">Meet the team</a></li>
+                        <li><a href="about.html#school">St. Andrew's Primary</a></li>
+                        <li><a href="about.html#look-inside">Look inside</a></li>
+                        <li><a href="about.html#accessibility">Accessibility</a></li>
+                    </ul>
+                </li>
+                <li><a href="safeguarding.html">Safeguarding</a></li>
+                <li><a href="donations.html">Donations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+            <div class="hamburger"></div>
+    </header>
+
+<!-- HERO -->
+    <div class="hero   parallax    hidden-until-scroll" style="background-image: url(./media/hero-images/default-page-hero.jpg)">
+        <div class="hero-text-container     hidden-until-scroll  delay-600ms">
+            <h1>Events</h1>
+        </div>
+        <div class="gradient-overlay"></div>
+    </div>
+
+<!-- MAIN CONTENT -->    
+    <main>
+        <section class="events-intro    hidden-until-scroll">
+            <div class="row">
+                <div class="column">
+                    <h2 class="gradient-text">There's a lot going on</h2>
+                    <p>At our church, every week brings lots of events designed to foster fellowship, learning, and joy within our community. Join our Choir Practice, where voices harmonize and newcomers find a warm welcome. Explore the treasures at our Charity Shop, a place where giving and receiving intertwine, creating a sense of purpose.</p>
+                    <p>Young minds embark on exciting journeys in Cubs and Beavers, part of our vibrant Scouts program, building character and lifelong friendships. </p>
+                </div>
+                <div class="column">
+                    <img src="./media/event-2.jpeg">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img src="./media/intro-image-3.jpeg">
+                </div>
+
+                <div class="column">
+                    <p>In addition to our regular weekly gatherings, we host lots of fun and special events throughout the year - there are quiz and games night, bible study sessions,  picnics and tea parties, and much more</p>
+                    <p>As the seasons change, our church becomes a hub of celebration during holidays like Easter, Harvest, and Christmas, where traditions are honored, and the spirit of togetherness thrives. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="events-section  hidden-until-scroll" id="upcoming-events">
+            <h2 class="gradient-text">Upcoming Events</h2>
+
+            <div class="events-container">
+                <div class="event">
+                    <div class="event-text">
+                        <h3>Sung Eucharist</h3>
+                        <h4>- Every Sunday</h4>
+                        <p class="event-date    nextSunday"></p>
+                        <p class="event-time">10am-11am</p>
+                        <hr>
+                        <p class="event-description">Join us for the high point of our weekly worship. This family friendly service has choral music, hymn singing, and an interactive sermon that will engage and inspire you. </p>
+                    </div>
+
+                    <div class="event-image" style="background-image: url('./media/sung-eucharist.jpeg')"></div>
+                </div>
+
+                <div class="event">
+                    <div class="event-text">
+                        <h3>Choir Practice</h3>
+                        <h4>- Every Tuesday</h4>
+                        <p class="event-date    nextTuesday"></p>
+                        <p class="event-time">7pm-8pm</p>
+                        <hr>
+                        <p class="event-description"> Whether you're a seasoned singer or a newcomer, all are welcome to be a part of this musical journey. Discover the joy of creating beautiful music together as we come together in fellowship and song.</p>
+                    </div>
+
+                    <div class="event-image" style="background-image: url('./media/choir.jpg')"></div>
+                </div>
+
+                <div class="event">
+                    <div class="event-text">
+                        <h3>Charity Shop</h3>
+                        <h4>- Every Wednesday</h4>
+                        <p class="event-date    nextWednesday"></p>
+                        <p class="event-time">9:30am-2:15pm</p>
+                        <hr>
+                        <p class="event-description">Our charity shop is more than just a store; it's a place where generosity meets community. You can make a difference by donating gently used items and, in turn, find unique treasures to take home. </p>
+                        <p><a href="shop.html" class="normal-link">Learn more</a> about what kind of items you can donate abd buy.</p>
+                    </div>
+
+                    <div class="event-image" style="background-image: url('./media/clothes.jpg')"></div>
+                </div>
+
+                <div class="event">
+                    <div class="event-text">
+                        <h3>Cubs</h3>
+                        <h4>- Every Thursday</h4>
+                        <p class="event-date    nextThursday"></p>
+                        <p class="event-time">6:30pm</p>
+                        <hr>
+                        <p class="event-description">Adventure awaits in our Cubs program! Young minds are invited to join a vibrant community of learners and explorers. Through a variety of engaging activities and teamwork, Cubs build character, develop skills, and forge friendships that last a lifetime.</p>
+                    </div>
+
+                    <div class="event-image" style="background-image: url('./media/scouts.jpg')"></div>
+                </div>
+
+                <div class="event">
+                    <div class="event-text">
+                        <h3>Beavers</h3>
+                        <h4>- Every Friday</h4>
+                        <p class="event-date    nextFriday"></p>
+                        <p class="event-time">6pm</p>
+                        <hr>
+                        <p class="event-description">The Beavers program is where the youngest members of our scouting family begin their journey. With boundless energy and curiosity, Beavers embark on fun-filled adventures that foster personal growth and a sense of community.</p>
+                    </div>
+
+                    <div class="event-image" style="background-image: url('./media/scouts.jpg')"></div>
+                </div>
+
+                <div class="event">
+                    <div class="event-text">
+                        <h3>Scouts</h3>
+                        <h4>- Every Friday</h4>
+                        <p class="event-date    nextFriday"></p>
+                        <p class="event-time">7:30pm-9:30pm</p>
+                        <hr>
+                        <p class="event-description">Scouting is a transformative experience, and our Scouts program is where young individuals develop leadership skills, embrace challenges, and build lasting friendships. Through outdoor adventures, community service, and skill-building activities, Scouts grow into responsible, confident, and compassionate individuals. </p>
+                    </div>
+
+                    <div class="event-image" style="background-image: url('./media/scouts.jpg')"></div>
+                </div>
+
+                <div class="bottom-fade"></div>
+            </div>
+
+            <button class="primary-button" id="loadMoreButton">Load more</button>
+        </section>
+    </main>
+
+<!-- FOOTER -->
+<footer>
+    <img src="./media/logo/logo.png" class="footer-logo">
+
+    <nav>
+        <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="about.html#accessibility">Accessibility</a></li>
+            <li><a href="safeguarding.html">Safeguarding</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="bookings.html">Bookings</a></li>
+            <li><a href="donations.html">Donations</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <p class="copyright-notice">&#169; <span id="year"></span> St. Andrews Church Orford</p>
+
+    <script>
+        document.getElementById('year').innerHTML = new Date().getFullYear();
+    </script>
+</footer>
+
+<!-- SCRIPTS -->
+    <script>
+    // Increase height of events container
+    var eventsContainer = document.querySelector('.events-container');
+    var loadMoreButton = document.getElementById('loadMoreButton');
+    var bottomFade = document.querySelector('.bottom-fade');
+
+    loadMoreButton.onclick = function() {
+        eventsContainer.style.maxHeight = eventsContainer.scrollHeight + "px";
+
+     // Disable load more button if container at max height
+    function disableButton() {
+        if (eventsContainer.offsetHeight >= eventsContainer.scrollHeight) {
+            loadMoreButton.classList.add('disabled-button');
+            bottomFade.style.opacity = 0;
+        }
+    }
+
+    setTimeout(disableButton, 1000);
+
+    }
+    </script>
+
+    <script src="./js/header-scroll-effects.js"></script>
+    <script src="./js/parallax.js"></script>
+    <script src="./js/flickity.js"></script>
+    <script src="./js/show-on-scroll.js"></script>
+    <script src="./js/get-dates.js"></script>
+</body>
+</html>

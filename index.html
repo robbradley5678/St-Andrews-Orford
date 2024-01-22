@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Andrews Orford</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalise.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/flickity.css" media="screen">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./media/favicon/favicon.png">
+    <!-- Preload -->
+    <link rel="preload" fetchpriority="high" as="image" href="./media/hero-images/home-hero.jpeg" type="image/jpeg">
+</head>
+
+<body>
+<!-- Header -->    
+    <header>
+        <a href="index.html"><img src="./media/logo/logo.png" class="logo   white-logo" alt="Logo"></a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="events.html">Events</a>
+                </li>
+
+                <li><a href="sermons.html">Sermons</a></li>
+                <li>
+                    <a href="bookings.html">Bookings</a>
+                    <ul>
+                        <li><a href="bookings.html">Overview</a></li>
+                        <li><a href="bookings.html#booking-form-section">Book the church</a></li>
+                    </ul>
+                </li>
+                <li><a href="shop.html">Shop</a></li>
+                <li>
+                    <a href="about.html">About us</a>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="about.html#meet-the-team">Meet the team</a></li>
+                        <li><a href="about.html#school">St. Andrew's Primary</a></li>
+                        <li><a href="about.html#look-inside">Look inside</a></li>
+                        <li><a href="about.html#accessibility">Accessibility</a></li>
+                    </ul>
+                </li>
+                <li><a href="safeguarding.html">Safeguarding</a></li>
+                <li><a href="donations.html">Donations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger"></div>
+    </header>
+
+<!-- HERO -->
+    <div class="home-hero   parallax    hidden-until-scroll" style="background-image: url(./media/hero-images/home-hero.jpeg)">
+        <div class="hero-text-container     hidden-until-scroll  delay-600ms">
+            <img src="./media/logo/cross.png" class="cross-icon" alt="">
+            <h1>Welcome to your Church</h1>
+            <h2>Finding your place starts here</h2>
+            <a href="#whats-on"><button class="button-white">What's on</button></a>
+            <a href="#intro"><button class="button-white-outline">Learn more</button></a>
+        </div>
+        <div class="gradient-overlay"></div>
+    </div>
+
+    <main>
+<!-- INTRO SECTION -->
+        <section class="intro-section   hidden-until-scroll" id="intro">
+            <div class="row">
+                <div class="column">
+                    <h2 class="gradient-text">A warm welcome to St. Andrew's</h2>
+                    <p>As parish priest of St. Andrew's Church Orford, I welcome you to our website which I hope will be informative and useful. You can find information about our latest events, watch our sermons live, book the church and hall, browse our charity shop, and much more. </p>
+                    <p>If you're new to us, please have a scroll to find out what we do, and what kind of events you can get involved in. If you have any questions, please <a href="contact.html" class="normal-link">get in touch</a> any time. I can't wait to see you in person sometime!</p>
+                    <p class="signature">Rev. Gill Hitchen</p>
+                </div>
+    
+                <div class="column">
+                    <div class="intro-image-container">
+                        <div class="intro-image-1   hidden-until-scroll     delay-400ms" style="background-image: url('./media/intro-image-1.jpeg')"></div>
+                        <div class="intro-image-2   hidden-until-scroll     delay-500ms" style="background-image: url('./media/intro-image-2.jpg')"></div>
+                        <div class="intro-image-3   hidden-until-scroll     delay-600ms" style="background-image: url('./media/intro-image-3.jpeg')"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- WHAT'S ON SECTION  -->        
+        <section class="whats-on-section    hidden-until-scroll" id="whats-on">
+            <div class="horizontal-page-padding-wrapper">
+                <h2 class="gradient-text">What's on</h2>
+            </div>
+
+            <div class="carousel    hidden-until-scroll" 
+                 data-flickity='{ 
+                    "wrapAround": true, 
+                    "autoPlay": false,
+                    "pauseAutoPlayOnHover": true }'>
+
+                <a href="/" class="event-card">
+                    <div class="event-image-container" style="background-image: url('./media/sung-eucharist.jpeg')"></div>
+                    <div class="event-text-container">
+                        <h3>Sung Eucharist</h3>
+                        <p class="event-date    nextSunday">Monday, 1st January 2024</p>
+                        <p class="event-time">7pm-8pm</p>
+                    </div>
+                </a>
+
+                <a href="/" class="event-card">
+                    <div class="event-image-container" style="background-image: url('./media/choir.jpg')"></div>
+                    <div class="event-text-container">
+                        <h3>Choir Practice</h3>
+                        <p class="event-date    nextTuesday"></p>
+                        <p class="event-time">7pm-8pm</p>
+                    </div>
+                </a>
+
+                <a href="/" class="event-card">
+                    <div class="event-image-container" style="background-image: url('./media/clothes.jpg')"></div>
+                    <div class="event-text-container">
+                        <h3>Charity Shop</h3>
+                        <p class="event-date    nextWednesday">Monday, 1st January 2024</p>
+                        <p class="event-time">7pm-8pm</p>
+                    </div>
+                </a>
+
+                <a href="/" class="event-card">
+                    <div class="event-image-container" style="background-image: url('./media/scouts.jpg')"></div>
+                    <div class="event-text-container">
+                        <h3>Cubs</h3>
+                        <p class="event-date    nextThursday">Monday, 1st January 2024</p>
+                        <p class="event-time">7pm-8pm</p>
+                    </div>
+                </a>
+
+                <a href="/" class="event-card">
+                    <div class="event-image-container" style="background-image: url('./media/scouts.jpg')"></div>
+                    <div class="event-text-container">
+                        <h3>Beavers</h3>
+                        <p class="event-date    nextFriday">Monday, 1st January 2024</p>
+                        <p class="event-time">7pm-8pm</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="horizontal-page-padding-wrapper">
+                <a href="events.html"><button class="primary-button">View all events</button></a>
+            </div>
+
+        </section>
+
+<!-- SERMON VIDEO SECTION  --> 
+        <section class="sermon-video-section    hidden-until-scroll">
+            <div class="row">
+                <div class="column">
+                    <div class="video-container"></div>
+                </div>
+    
+                <div class="column">
+                    <h2 class="gradient-text">Join our sermons online</h2>
+                    <p>Can't make it to us in person? Don't worry - you can join us virtually every Sunday at 10am for a livestream of our sermon. You can also catch up on all our previous sermons too!</p>
+                    <a href="sermons.html"><button class="primary-button">Watch live</button></a>
+                    <a href="sermons.html"><button class="secondary-button">View sermons</button></a>
+                </div>
+            </div>
+        </section>
+
+<!-- ABOUT ECTION  --> 
+        <section class="about-section   parallax    hidden-until-scroll" style="background-image: url(./media/church-interior.jpg)">
+            <div class="column  hidden-until-scroll     delay-400ms">
+                <h2>A place for everyone</h2>
+                <p>At St. Andrew's we're proud to be a diverse and inclusive Church that welcomes anyone, and everyone, no matter your age, background, sexuality or gender identity.</p>
+                <p>If you've never been to Church before, read a little bit more about us and our history to see why we could be a place for you to belong.</p>
+                <a href="about.html"><button class="button-white">About us</button></a>
+            </div>
+            <div class="gradient-overlay"></div>
+        </section>
+
+<!-- GET INVOLVED SECTION  -->
+        <section class="get-involved-section    hidden-until-scroll">
+                <h2 class="gradient-text">Get involved</h2>
+                <div class="row">
+                    <a href="bookings.html" class="get-involved-card    hidden-until-scroll     delay-400ms">
+                        <div class="get-involved-image-container" style="background-image: url('./media/wedding.jpg')"></div>
+                        <div class="get-involved-text-container">
+                            <h4 class="gradient-text">Church Bookings</h4>
+                            <p>Book the church or church hall for weddings, christenings, funerals, and other events</p>
+                            <p class="get-involved-link">Bookings</p> 
+                        </div>
+                    </a>
+
+                    <a href="shop.html" class="get-involved-card    hidden-until-scroll     delay-600ms">
+                        <div class="get-involved-image-container" style="background-image: url('./media/charity-shop.jpg')"></div>
+                        <div class="get-involved-text-container">
+                            <h4 class="gradient-text">Charity Shop</h4>
+                            <p>Learn more about our opening times, the kind of things you can buy, and the items we're currently looking for</p>
+                            <p class="get-involved-link">Shop</p> 
+                        </div>
+                    </a>
+
+                    <a href="donations.html" class="get-involved-card    hidden-until-scroll     delay-800ms">
+                        <div class="get-involved-image-container" style="background-image: url('./media/donations.jpg')"></div>
+                        <div class="get-involved-text-container">
+                            <h4 class="gradient-text">Donations</h4>
+                            <p>Any donations to our Church are always greatly appreciated. You're not just donating to us - you're donating to your community</p>
+                            <p class="get-involved-link">Donations</p> 
+                        </div>
+                    </a>
+                </div>
+        </section>       
+
+<!-- EVENT BANNER -->
+        <section class="event-banner    parallax    hidden-until-scroll" style="background-image: url(./media/sung-eucharist.jpeg)">
+                <div class="column      hidden-until-scroll     delay-400ms">
+                    <h2>Sung Eucharist</h2>
+                    <p>Join us at 10am every Sunday for the high point of our weekly worship</p>
+                    <a href="events.html#upcoming-events"><button class="button-white">Learn more</button></a>
+                </div>
+                <div class="gradient-overlay"></div>
+        </section>
+
+<!-- MAP SECTION  -->
+        <section class="map-section     hidden-until-scroll">
+            <div class="row">
+                <div class="column">
+                    <h2 class="gradient-text">Come and see us</h2>
+                    <p>We can't wait to see you at one of our sermons or events, or even if you want to pop in for a chat.</p>
+                    <a href="contact.html"><button class="primary-button">Contact us</button></a>
+                </div>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9511.657671971452!2d-2.5843194!3d53.4163567!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b03d081a0a99d%3A0x65f43f4a3cd7b023!2sSt%20Andrew&#39;s%20Church!5e0!3m2!1sen!2suk!4v1704325503625!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+<!-- FOOTER -->
+<footer>
+    <img src="./media/logo/logo.png" class="footer-logo">
+
+    <nav>
+        <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="about.html#accessibility">Accessibility</a></li>
+            <li><a href="safeguarding.html">Safeguarding</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="bookings.html">Bookings</a></li>
+            <li><a href="donations.html">Donations</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <p class="copyright-notice">&#169; <span id="year"></span> St. Andrews Church Orford</p>
+
+    <script>
+        document.getElementById('year').innerHTML = new Date().getFullYear();
+    </script>
+</footer>
+
+<!-- SCRIPTS -->
+    <script src="./js/header-scroll-effects.js"></script>
+    <script src="./js/parallax.js"></script>
+    <script src="./js/flickity.js"></script>
+    <script src="./js/show-on-scroll.js"></script>
+    <script src="./js/get-dates.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sermons • St. Andrews Orford</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalise.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/flickity.css" media="screen">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./media/favicon/favicon.png">
+    <!-- Preload -->
+    <link rel="preload" fetchpriority="high" as="image" href="./media/hero-images/default-page-hero.jpg" type="image/jpeg">
+</head>
+
+<body>
+<!-- Header -->    
+    <header>
+        <a href="index.html"><img src="./media/logo/logo.png" class="logo   white-logo" alt="Logo"></a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="events.html">Events</a>
+                </li>
+
+                <li><a href="sermons.html">Sermons</a></li>
+                <li>
+                    <a href="bookings.html">Bookings</a>
+                    <ul>
+                        <li><a href="bookings.html">Overview</a></li>
+                        <li><a href="bookings.html#booking-form-section">Book the church</a></li>
+                    </ul>
+                </li>
+                <li><a href="shop.html">Shop</a></li>
+                <li>
+                    <a href="about.html">About us</a>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="about.html#meet-the-team">Meet the team</a></li>
+                        <li><a href="about.html#school">St. Andrew's Primary</a></li>
+                        <li><a href="about.html#look-inside">Look inside</a></li>
+                        <li><a href="about.html#accessibility">Accessibility</a></li>
+                    </ul>
+                </li>
+                <li><a href="safeguarding.html">Safeguarding</a></li>
+                <li><a href="donations.html">Donations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+            <div class="hamburger"></div>
+    </header>
+
+<!-- HERO -->
+    <div class="hero   parallax    hidden-until-scroll" style="background-image: url(./media/hero-images/default-page-hero.jpg)">
+        <div class="hero-text-container     hidden-until-scroll  delay-600ms">
+            <h1>Sermons</h1>
+        </div>
+        <div class="gradient-overlay"></div>
+    </div>
+
+<!-- MAIN CONTENT -->
+    <main>
+        <section>
+            <h2 class="gradient-text">We're still working on this page</h2>
+            <p>Check back soon, it'll be up and running in no time.</p>
+            <button class="primary-button" onclick="history.back()">Go back</button>
+        </section>
+    </main>
+
+<!-- FOOTER -->
+<footer>
+    <img src="./media/logo/logo.png" class="footer-logo">
+
+    <nav>
+        <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="about.html#accessibility">Accessibility</a></li>
+            <li><a href="safeguarding.html">Safeguarding</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="bookings.html">Bookings</a></li>
+            <li><a href="donations.html">Donations</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <p class="copyright-notice">&#169; <span id="year"></span> St. Andrews Church Orford</p>
+
+    <script>
+        document.getElementById('year').innerHTML = new Date().getFullYear();
+    </script>
+</footer>
+
+<!-- SCRIPTS -->
+    <script src="./js/header-scroll-effects.js"></script>
+    <script src="./js/parallax.js"></script>
+    <script src="./js/flickity.js"></script>
+    <script src="./js/show-on-scroll.js"></script>
+</body>
+</html>

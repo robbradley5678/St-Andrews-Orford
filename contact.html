@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us • St. Andrews Orford</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalise.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/flickity.css" media="screen">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./media/favicon/favicon.png">
+    <!-- Preload -->
+    <link rel="preload" fetchpriority="high" as="image" href="./media/hero-images/default-page-hero.jpg" type="image/jpeg">
+</head>
+
+<body>
+<!-- Header -->    
+    <header>
+        <a href="index.html"><img src="./media/logo/logo.png" class="logo   white-logo" alt="Logo"></a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="events.html">Events</a>
+                </li>
+
+                <li><a href="sermons.html">Sermons</a></li>
+                <li>
+                    <a href="bookings.html">Bookings</a>
+                    <ul>
+                        <li><a href="bookings.html">Overview</a></li>
+                        <li><a href="bookings.html#booking-form-section">Book the church</a></li>
+                    </ul>
+                </li>
+                <li><a href="shop.html">Shop</a></li>
+                <li>
+                    <a href="about.html">About us</a>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="about.html#meet-the-team">Meet the team</a></li>
+                        <li><a href="about.html#school">St. Andrew's Primary</a></li>
+                        <li><a href="about.html#look-inside">Look inside</a></li>
+                        <li><a href="about.html#accessibility">Accessibility</a></li>
+                    </ul>
+                </li>
+                <li><a href="safeguarding.html">Safeguarding</a></li>
+                <li><a href="donations.html">Donations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+            <div class="hamburger"></div>
+    </header>
+
+<!-- HERO -->
+    <div class="hero   parallax    hidden-until-scroll" style="background-image: url(./media/hero-images/default-page-hero.jpg)">
+        <div class="hero-text-container     hidden-until-scroll     delay-600ms">
+            <h1>Contact us</h1>
+        </div>
+        <div class="gradient-overlay"></div>
+    </div>
+
+<!-- MAIN CONTENT -->    
+    <main>
+        <section class="contact-us-section  hidden-until-scroll">
+            <div class="narrow-on-desktop">
+
+                <p>If you would like to get in touch, please give us a call, send us an email, or fill in the contact form, and we'll get back to you as soon as we can. If you want to come and see us in person, please call in - we'll be glad to meet you!</p>
+
+                <div class="row">
+                    <div class="column">
+                        <div class="contact-card">
+                            <h3 class="gradient-text">Call us</h3>
+                            <tel>01925 639 491</tel>
+                        </div>
+
+                        <div class="contact-card">
+                            <h3 class="gradient-text">Email us</h3>
+                            <address>email@email.com</address>
+                        </div>
+
+                        <div class="contact-card">
+                            <h3 class="gradient-text">Visit us</h3>
+                            <address>Poplars Avenue<br>Warrington<br>WA2 9UE</address>
+                        </div>
+                    </div>
+    
+                    <div class="column">
+                        <h3 class="gradient-text">Send us a message</h3>
+                        <form method="post" action="https://mail.amcsinternet.co.uk/mailer.php?to=" autocomplete="on" class="booking-form">
+    
+                            <div class="form-element">
+                                <label for="name">Your name:</label>
+                                <input type="text" id="name" name="name">
+                            </div>
+    
+                            <div class="form-element">
+                                <label for="tel">Phone number:</label>
+                                <input type="tel" id="tel" name="tel">
+                            </div>
+                  
+                            <div class="form-element">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+    
+                            <div class="form-element">
+                                <label for="message">Your message:</label>
+                                <textarea type="message" id="message" name="mesage"></textarea>
+                            </div>
+    
+                            <button type="submit" class="primary-button">Send now</button>
+                         </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9511.657671971452!2d-2.5843194!3d53.4163567!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b03d081a0a99d%3A0x65f43f4a3cd7b023!2sSt%20Andrew&#39;s%20Church!5e0!3m2!1sen!2suk!4v1704325503625!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contact-us-map"></iframe>
+
+<!-- FOOTER -->
+<footer>
+    <img src="./media/logo/logo.png" class="footer-logo">
+
+    <nav>
+        <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="about.html#accessibility">Accessibility</a></li>
+            <li><a href="safeguarding.html">Safeguarding</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="bookings.html">Bookings</a></li>
+            <li><a href="donations.html">Donations</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <p class="copyright-notice">&#169; <span id="year"></span> St. Andrews Church Orford</p>
+
+    <script>
+        document.getElementById('year').innerHTML = new Date().getFullYear();
+    </script>
+</footer>
+
+<!-- SCRIPTS -->
+    <script src="./js/header-scroll-effects.js"></script>
+    <script src="./js/parallax.js"></script>
+    <script src="./js/flickity.js"></script>
+    <script src="./js/show-on-scroll.js"></script>
+</body>
+</html>
